@@ -34,6 +34,7 @@ hostname
 echo
 echo "The ip address"
 ip addr | grep enp0s3 | tail -1 | awk '{print $2}'
+echo
 echo "All opened ports"
 netstat -tulpn | grep LISTEN
 echo
